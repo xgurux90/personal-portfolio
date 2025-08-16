@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- Link the site stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Include AOS library styles for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 </head>
 <body>
     <!-- Site header contains the navigation and hero section -->
@@ -23,88 +25,156 @@
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <!-- Dark mode toggle button -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
             </div>
         </nav>
         <!-- Hero section with a background image and call‑to‑action -->
-        <section class="hero">
+        <section class="hero" data-aos="fade-up">
             <div class="hero-overlay"></div>
-            <div class="hero-content">
+            <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
                 <h1>Mohammad Abdullah</h1>
                 <!-- Updated tagline to reflect current role and industry specializations -->
-                <p>Sales Manager | Industrial, Fire Protection, Automation &amp; Energy</p>
+                <p>Sales Manager&nbsp;|&nbsp;Industrial, Fire Protection, Automation &amp; Energy</p>
                 <a href="#contact" class="cta-button">Get In Touch</a>
             </div>
         </section>
     </header>
     <main>
         <!-- About section introduces the person and highlights passions -->
-        <section id="about" class="section about">
+        <section id="about" class="section about" data-aos="fade-up">
             <h2>About Me</h2>
             <p>
-                I'm a highly experienced Sales Manager and <strong>Certified Fire Protection Specialist (CFPS®)</strong> with more than twelve years of experience across the industrial, fire protection, automation and energy sectors. Originally trained as a mechatronics engineer, I hold a Bachelor of Engineering in Mechatronics, Robotics and Automation from Al‑Balqa Applied University (2008&nbsp;&ndash;&nbsp;2012), giving me a solid technical foundation on which to build client‑focused solutions.
+                I'm a seasoned Sales Manager and <strong>Certified Fire Protection Specialist (CFPS®)</strong> with over thirteen years of expertise developing tailored solutions, delivering impactful product presentations and nurturing strong customer relationships. With a background in mechatronics, I earned a Bachelor of Engineering in Mechatronics, Robotics and Automation from Al‑Balqa Applied University (2008&nbsp;–&nbsp;2012), providing a solid technical foundation for my career in industrial automation and fire protection.
             </p>
             <p>
-                Throughout my career I’ve progressed from engineering roles in production and fire safety to senior sales and leadership positions. Today I manage sales operations for regional automation and fire protection markets while guiding multidisciplinary teams and nurturing long‑term client relationships. Outside of work I'm based in Dammam, Saudi Arabia and enjoy spending time with my wife and two children, Judy and Omar.
+                Over the years I have implemented strategic sales plans that drove significant revenue growth, trained and mentored junior engineers, and negotiated mutually beneficial contracts. In my current role I manage a diverse sales team, forecast and track opportunities through meticulous pipeline management and forge partnerships with industry leaders. Based in Dammam, Saudi Arabia, I'm also a proud husband and father to two children, Judy and Omar, and enjoy exploring technology innovations in my spare time.
             </p>
         </section>
-        <!-- Experience section summarises career highlights -->
+        <!-- Experience section presented as a dynamic vertical timeline for enhanced engagement -->
         <section id="experience" class="section experience">
             <h2>Experience</h2>
-            <div class="experience-grid">
-                <!-- Current role: highlight responsibilities leading sales operations at a regional automation and fire protection provider -->
-                <div class="experience-item">
-                    <h3>Sales Manager</h3>
-                    <h4>Subway Networks &ndash; Oct&nbsp;2024&nbsp;&ndash;&nbsp;Present</h4>
-                    <p>
-                        Manages sales operations for Siemens Partners across Saudi Arabia, Bahrain and the UAE, specialising in automation, SCADA and instrumentation. Oversees the supply of mechanical and electrical equipment to oil&nbsp;&amp;&nbsp;gas, petrochemical and industrial clients, delivering turnkey solutions. Expanded the company’s client base in Saudi Arabia and positioned Subway Networks as a key player in the market.
-                    </p>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
+                        <h3>Sales Manager</h3>
+                        <span class="timeline-date">Subway Networks – Oct&nbsp;2024&nbsp;–&nbsp;Present</span>
+                        <p>
+                            Leads a team of seven inside sales engineers and three field sales engineers for one of Siemens&nbsp;Ltd.’s largest factory automation partners. Focus areas include automation, SCADA, sensors, meters and low‑current systems across oil&nbsp;&amp;&nbsp;gas, petrochemical, mining, cement, food&nbsp;&amp;&nbsp;beverage, water and power sectors. Built a vast network of contacts, added numerous new accounts and forged partnerships with firms like Johnson Controls, Schneider Electric and Honeywell. Created new revenue streams in fire protection, building management, CCTV, access control and public address systems through cross‑selling and expanding the company’s customer base.
+                        </p>
+                    </div>
                 </div>
-                <!-- Previous role: senior technical sales engineer for building controls and fire protection systems -->
-                <div class="experience-item">
-                    <h3>Senior Sales Engineer</h3>
-                    <h4>Johnson Controls Arabia &ndash; Apr&nbsp;2022&nbsp;&ndash;&nbsp;Oct&nbsp;2024</h4>
-                    <p>
-                        Developed and maintained relationships with key customers and partners while delivering technical presentations, documentation and proposals. Analysed customer requirements to design solutions and develop sales strategies. Provided technical support, monitored sales performance and represented the company at industry events and trade shows.
-                    </p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Sales Engineer</h3>
+                        <span class="timeline-date">Johnson Controls Arabia – Apr&nbsp;2022&nbsp;–&nbsp;Oct&nbsp;2024</span>
+                        <p>
+                            Established Johnson Controls Arabia’s presence in Saudi Arabia and consistently exceeded KPIs across sales targets and account acquisition. Researched and analysed customer requirements to design tailored solutions, delivered persuasive presentations and mentored junior engineers. Implemented a strategic sales plan that increased revenue by 180%, negotiated profitable contracts, maintained strong customer relationships and developed a pricing strategy that maximised profitability. Served diverse sectors including oil&nbsp;&amp;&nbsp;gas, steel, food&nbsp;&amp;&nbsp;beverage, pharmaceutical and mining industries.
+                        </p>
+                    </div>
                 </div>
-                <!-- Projects sales engineer: managing fire protection projects and O&M contracts -->
-                <div class="experience-item">
-                    <h3>Projects Sales Engineer</h3>
-                    <h4>Heba Fire &amp; Safety Equipments Company &ndash; Sep&nbsp;2018&nbsp;&ndash;&nbsp;Mar&nbsp;2022</h4>
-                    <p>
-                        Managed fire protection projects and operations &amp; maintenance contracts in Saudi Arabia’s water and power, oil&nbsp;&amp;&nbsp;gas, petrochemical and industrial sectors. Coordinated multidisciplinary teams to deliver compliant fire protection solutions and services.
-                    </p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
+                        <h3>Projects Sales Engineer</h3>
+                        <span class="timeline-date">Heba Fire &amp; Safety Equipment Company – Sep&nbsp;2018&nbsp;–&nbsp;Apr&nbsp;2022</span>
+                        <p>
+                            Managed fire protection projects and operations&nbsp;&amp;&nbsp;maintenance contracts throughout Saudi Arabia’s water and power, oil&nbsp;&amp;&nbsp;gas, petrochemical and industrial sectors. Led multidisciplinary teams to deliver compliant fire protection solutions and services, building lasting client relationships and expanding company presence across all regions of the Kingdom.
+                        </p>
+                    </div>
                 </div>
-                <!-- Early sales engineer role providing technical sales support -->
-                <div class="experience-item">
-                    <h3>Sales Engineer</h3>
-                    <h4>Abunayyan Trading &ndash; Aug&nbsp;2015&nbsp;&ndash;&nbsp;Aug&nbsp;2018</h4>
-                    <p>
-                        Provided sales support and product expertise for industrial clients across Saudi Arabia. Developed customer relationships, delivered presentations and ensured technical alignment between products and client requirements.
-                    </p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
+                        <h3>Sales Engineer</h3>
+                        <span class="timeline-date">Abunayyan Trading – Aug&nbsp;2015&nbsp;–&nbsp;Aug&nbsp;2018</span>
+                        <p>
+                            Delivered technical sales support for solutions including electrical power generators (Kohler&nbsp;Power&nbsp;Systems), busways (Schneider&nbsp;Electric and Honeywell), automatic transfer switches and smart metering solutions from Deihl. Authored case studies and white papers, produced webinars to position products as industry leaders and cultivated relationships with key stakeholders to identify new opportunities.
+                        </p>
+                    </div>
                 </div>
-                <!-- Engineering foundation in production and blending operations -->
-                <div class="experience-item">
-                    <h3>Control &amp; Blending Engineer</h3>
-                    <h4>FUCHS PETROLUB SE &ndash; Nov&nbsp;2014&nbsp;&ndash;&nbsp;Aug&nbsp;2015</h4>
-                    <p>
-                        Supervised production processes and blending operations, ensuring compliance with quality standards and optimal plant performance. Gained hands‑on experience in manufacturing environments and process control.
-                    </p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
+                        <h3>Control &amp; Blending Engineer</h3>
+                        <span class="timeline-date">FUCHS&nbsp;PETROLUB&nbsp;SE – Nov&nbsp;2014&nbsp;–&nbsp;Aug&nbsp;2015</span>
+                        <p>
+                            Supervised production processes and blending operations, ensuring compliance with quality standards and optimal plant performance. Developed hands‑on expertise in manufacturing environments and process control which laid the foundation for future technical sales roles.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
+                        <h3>Technical Sales Engineer</h3>
+                        <span class="timeline-date">Ayoubi Steel Factory – Oct&nbsp;2012&nbsp;–&nbsp;Aug&nbsp;2015</span>
+                        <p>
+                            Provided technical sales support for steel fabrication and mechanical systems, collaborating with engineering teams to tailor solutions to client requirements. Built early experience in sales planning, customer account management and negotiation, paving the way for later success in the automation and fire protection industries.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Skills section lists relevant expertise -->
+        <!-- Skills section shows proficiency levels with animated progress bars for a dynamic touch -->
         <section id="skills" class="section skills">
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li>Automation &amp; Mechatronics</li>
-                <li>Sales Strategy &amp; Business Development</li>
-        <li>Project Management</li>
-        <li>Technical Consulting</li>
-        <li>Fire Protection &amp; Safety</li>
-        <li>Sales &amp; Marketing</li>
-        <li>Leadership &amp; Team Building</li>
-        <li>Customer Relationship Management</li>
+                <li class="skill-bar" data-width="95%" data-aos="fade-up"><span>Automation &amp; Mechatronics</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="92%" data-aos="fade-up" data-aos-delay="50"><span>Sales Strategy &amp; Business Development</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="90%" data-aos="fade-up" data-aos-delay="100"><span>Project Management</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="88%" data-aos="fade-up" data-aos-delay="150"><span>Technical Consulting</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="93%" data-aos="fade-up" data-aos-delay="200"><span>Fire Protection &amp; Safety</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="91%" data-aos="fade-up" data-aos-delay="250"><span>Sales &amp; Marketing</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="87%" data-aos="fade-up" data-aos-delay="300"><span>Leadership &amp; Team Building</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="88%" data-aos="fade-up" data-aos-delay="350"><span>Customer Relationship Management</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="85%" data-aos="fade-up" data-aos-delay="400"><span>Sales &amp; Pricing Strategy</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="80%" data-aos="fade-up" data-aos-delay="450"><span>Customer Demand Planning</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="82%" data-aos="fade-up" data-aos-delay="500"><span>Sales Planning</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="78%" data-aos="fade-up" data-aos-delay="550"><span>Profit‑Based Sales Targets</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="86%" data-aos="fade-up" data-aos-delay="600"><span>Customer Account Management</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="84%" data-aos="fade-up" data-aos-delay="650"><span>Negotiation Skills</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="82%" data-aos="fade-up" data-aos-delay="700"><span>Technical Sales</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="83%" data-aos="fade-up" data-aos-delay="750"><span>Mentoring &amp; Coaching</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="89%" data-aos="fade-up" data-aos-delay="800"><span>Problem Solving</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
+                <li class="skill-bar" data-width="96%" data-aos="fade-up" data-aos-delay="850"><span>Languages: English &amp; Arabic</span>
+                    <div class="progress-container"><div class="progress"></div></div>
+                </li>
             </ul>
         </section>
 
@@ -123,14 +193,24 @@
                     <p>Recognised through education, experience and examination as a Certified Fire Protection Specialist (CFPS®), demonstrating expertise in fire protection principles.</p>
                 </div>
                 <div class="certification-item">
+                    <h3>Professional Accreditation Card</h3>
+                    <h4>Saudi Council of Engineers</h4>
+                    <p>Holds a professional accreditation card verifying engineering credentials and active membership in the Saudi Council of Engineers.</p>
+                </div>
+                <div class="certification-item">
                     <h3>Testing and Evaluation of Water Supplies for Fire Protection</h3>
                     <h4>National Fire Academy</h4>
                     <p>Completed course Q0218 on testing and evaluating water supplies for fire protection on October&nbsp;29,&nbsp;2019.</p>
                 </div>
                 <div class="certification-item">
-                    <h3>Clean Agent Fire Suppression &amp; Extinguishment</h3>
+                    <h3>Clean Agent Fire Suppression</h3>
                     <h4>3M Academy</h4>
-                    <p>Completed training in Clean Agent Fire Suppression and Extinguishment on September&nbsp;11,&nbsp;2018.</p>
+                    <p>Successfully completed the 3M Academy course on Clean Agent Fire Suppression on September&nbsp;11,&nbsp;2018.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Clean Agent Fire Extinguishment</h3>
+                    <h4>3M Academy</h4>
+                    <p>Successfully completed the 3M Academy course on Clean Agent Fire Extinguishment on September&nbsp;11,&nbsp;2018.</p>
                 </div>
                 <div class="certification-item">
                     <h3>An Introduction to Electronic Access Control</h3>
@@ -152,6 +232,61 @@
                     <h4>Siemens</h4>
                     <p>Issued January&nbsp;2025.</p>
                 </div>
+                <div class="certification-item">
+                    <h3>Protection Systems in Low‑Voltage Power Distribution</h3>
+                    <h4>Siemens</h4>
+                    <p>Completed course on protection systems in low‑voltage power distribution in January&nbsp;2025.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Hazardous Materials for Inspectors (Q0382)</h3>
+                    <h4>FEMA – National Fire Academy</h4>
+                    <p>Completed FEMA course Q0382 covering hazardous materials for inspectors in 2019.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Hydraulic Calculation for Water‑based Fire Protection Systems (Q0137)</h3>
+                    <h4>FEMA – National Fire Academy</h4>
+                    <p>Completed FEMA course Q0137 on hydraulic calculations for water‑based fire protection systems in 2018.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Active Energy Using Speed Control</h3>
+                    <h4>Schneider Electric</h4>
+                    <p>Completed the Active Energy Using Speed Control course in 2018.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Demand Response and the Smart Grid</h3>
+                    <h4>Schneider Electric</h4>
+                    <p>Completed the Demand Response and Smart Grid course in 2018.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Emergency Power Generators for Healthcare Facilities</h3>
+                    <h4>Schneider Electric</h4>
+                    <p>Completed course on emergency power generators for healthcare facilities in 2018.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Alternative Power Generation Technologies</h3>
+                    <h4>Schneider Electric</h4>
+                    <p>Completed the alternative power generation technologies course in 2018.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Pumping Systems I, II &amp; III</h3>
+                    <h4>Schneider Electric</h4>
+                    <p>Completed a three‑part series on pumping systems covering pump types and performance, efficient flow control and improving system efficiency in 2018.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Industrial &amp; Marine Power Systems Fundamentals</h3>
+                    <h4>Kohler Power Systems</h4>
+                    <p>Completed courses on industrial power systems fundamentals and marine power systems in 2017.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>SolidWorks Training</h3>
+                    <h4>Jordanian Association of Engineers</h4>
+                    <p>Completed a SolidWorks training program in 2011.</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Embedded Systems Design</h3>
+                    <h4>Jordanian Ministry of Industry</h4>
+                    <p>Completed training in embedded systems design in 2010.</p>
+                </div>
             </div>
         </section>
         <!-- Contact section includes ways to get in touch -->
@@ -159,9 +294,10 @@
             <h2>Contact</h2>
             <p>If you'd like to discuss potential collaborations or have any questions, please feel free to reach out.</p>
             <div class="contact-details">
-                <!-- Contact details: update the email address as appropriate -->
-                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/m-o-abdullah/">linkedin.com/in/m-o-abdullah</a></p>
+                <p>Location: Dammam, Saudi Arabia</p>
+                <p>Phone: <a href="tel:+966538766689">+966&nbsp;538&nbsp;766&nbsp;689</a></p>
+                <p>Email: <a href="mailto:Eng-m-a@outlook.com">Eng-m-a@outlook.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/m-oabdullah/">linkedin.com/in/m-oabdullah</a></p>
             </div>
         </section>
     </main>
@@ -169,5 +305,32 @@
     <footer>
         <p>&copy; 2025 Mohammad Abdullah. All rights reserved.</p>
     </footer>
+    <!-- Include scripts for animations and dark mode toggle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+      const toggleBtn = document.getElementById('theme-toggle');
+      if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+          toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+      }
+      // Animate skill progress bars when they enter the viewport
+      document.addEventListener('DOMContentLoaded', () => {
+        const skillBars = document.querySelectorAll('.skill-bar');
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const bar = entry.target.querySelector('.progress');
+              const width = entry.target.getAttribute('data-width');
+              bar.style.width = width;
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.4 });
+        skillBars.forEach(bar => observer.observe(bar));
+      });
+    </script>
 </body>
 </html>
