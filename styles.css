@@ -210,6 +210,40 @@ body {
   color: var(--primary-color);
 }
 
+/* Certifications section */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.certification-item {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-left: 4px solid var(--secondary-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.certification-item h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  color: var(--primary-color);
+}
+
+.certification-item h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.certification-item p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
 /* Contact section */
 .contact p {
   text-align: center;
